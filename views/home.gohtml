@@ -1,0 +1,34 @@
+{{define "yield"}}
+<h1>Wildberries L0!</h1>
+
+<table border="1">
+   <caption>Table</caption>
+   <tr>
+    <th>OrderUid</th>
+    <th>TrackNumber</th>
+    <th>Entry</th>
+    <th>Locale</th>
+    <th>InternalSignature</th>
+    <th>CustomerId</th>
+    <th>DeliveryService</th>
+    <th>Shardkey</th>
+    <th>SmId</th>
+    <th>DateCreated</th>
+    <th>OofShard</th>
+   </tr>
+    <tr>
+    <td>{{ .OrderUid }}</td>
+    <td>{{ .TrackNumber }}</td>
+    <td>{{ .Entry }}</td>
+    <td>{{ .Locale }}</td>
+    <td>{{ .InternalSignature }}</td>
+    <td>{{ .CustomerId }}</td>
+    <td>{{ .DeliveryService }}</td>
+    <td>{{ .Shardkey }}</td>
+    <td>{{ .SmId }}</td>
+    <td>{{ .DateCreated }}</td>
+    <td>{{ .OofShard }}</td>
+   </tr>
+  </table>
+{{template "footer"}}
+{{end}}
